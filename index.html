@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M/S Harcharan Dass Gupta | Class 1A CPWD Contractor Delhi | Civil MEP Interiors Since 1986</title>
+<meta name="description" content="M/S Harcharan Dass Gupta — Class 1A CPWD registered contractor based in New Delhi. Delivering civil construction, MEP, interiors & specialized systems for government, defense & institutional clients since 1986.">
+<meta property="og:title" content="M/S Harcharan Dass Gupta | Class 1A CPWD Contractor">
+<meta property="og:description" content="38+ years of trusted delivery for CPWD, ISRO, BSF, NBCC, Delhi University & more. Class 1A registered. New Delhi.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ─── DESIGN TOKENS ──────────────────────────────────────── */
+:root{
+  --forest:#0d2b1f;
+  --forest2:#132d20;
+  --forest3:#1a3d2a;
+  --forest4:#245c3c;
+  --sage:#3d7a56;
+  --sage2:#4e9468;
+  --ivory:#f7f4ee;
+  --ivory2:#f0ece3;
+  --ivory3:#e8e3d8;
+  --ivory4:#ddd7cc;
+  --white:#ffffff;
+  --ink:#1c1a16;
+  --ink2:#3a3630;
+  --ink3:#6b6358;
+  --ink4:#8a8278;
+  --gold:#8a6c2a;
+  --gold2:#b08d3c;
+  --gold3:#d4ab54;
+  --gold4:#e8cc7a;
+  --sh-xs:0 1px 3px rgba(13,43,31,.06);
+  --sh-sm:0 2px 12px rgba(13,43,31,.08),0 1px 3px rgba(0,0,0,.04);
+  --sh-md:0 6px 28px rgba(13,43,31,.12),0 2px 8px rgba(0,0,0,.05);
+  --sh-lg:0 16px 56px rgba(13,43,31,.18),0 4px 16px rgba(0,0,0,.07);
+  --sh-xl:0 32px 80px rgba(13,43,31,.22),0 8px 24px rgba(0,0,0,.08);
+  --bdr:rgba(13,43,31,.1);
+  --bdr2:rgba(13,43,31,.18);
+  --transition:.22s cubic-bezier(.4,0,.2,1);
+}
+
+/* ─── RESET & BASE ───────────────────────────────────────── */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  font-family:'DM Sans',ui-sans-serif;
+  background:var(--ivory);
+  color:var(--ink);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:999;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.018'/%3E%3C/svg%3E");
+  opacity:.5;
+}
+h1,h2,h3,h4{font-family:'EB Garamond',serif;line-height:1.15;font-weight:600;}
+a{text-decoration:none;}
+
+/* ─── MOBILE OVERLAY ─────────────────────────────────────── */
+.mobile-overlay{
+  display:none;position:fixed;inset:0;z-index:200;
+  background:var(--forest);
+  flex-direction:column;padding:2rem 1.5rem;
+  transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);
+}
+.mobile-overlay.open{transform:translateX(0);}
+.mob-close{
+  align-self:flex-end;background:none;border:none;color:rgba(240,234,220,.6);
+  font-size:1.4rem;cursor:pointer;padding:.5rem;margin-bottom:2rem;
+}
+.mob-links{display:flex;flex-direction:column;gap:0;}
+.mob-links a{
+  color:rgba(240,234,220,.7);text-decoration:none;
+  font-size:1.3rem;font-family:'EB Garamond',serif;font-weight:500;
+  padding:1.1rem 0;border-bottom:1px solid rgba(196,160,90,.1);transition:color .2s;
+}
+.mob-links a:hover{color:var(--gold4);}
+.mob-cta{
+  margin-top:2rem;background:var(--gold2);color:var(--forest);
+  padding:1rem;border-radius:8px;text-align:center;font-weight:600;
+  font-size:.95rem;text-decoration:none;display:block;
+}
+.mob-contact{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(196,160,90,.12);}
+.mob-contact p{color:rgba(240,234,220,.4);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem;}
+.mob-contact a{color:rgba(240,234,220,.65);text-decoration:none;display:block;font-size:.88rem;margin-bottom:.3rem;}
+
+/* ─── NAV ────────────────────────────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 3rem;height:62px;
+  background:var(--forest);
+  border-bottom:1px solid rgba(196,160,90,.15);
+  box-shadow:0 4px 24px rgba(0,0,0,.22);
+}
+nav::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(196,160,90,.4) 30%,rgba(232,204,122,.6) 50%,rgba(196,160,90,.4) 70%,transparent);
+}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-emblem{
+  width:40px;height:40px;border-radius:8px;
+  background:rgba(0,0,0,.3);border:1px solid rgba(196,160,90,.3);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-family:'EB Garamond',serif;font-size:12px;font-weight:700;
+  color:rgba(196,160,90,.9);letter-spacing:1.5px;
+}
+.nav-name{font-family:'EB Garamond',serif;font-size:1rem;font-weight:600;color:#f0ead8;line-height:1.2;}
+.nav-name small{display:block;font-family:'DM Sans',sans-serif;font-size:.6rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:rgba(196,160,90,.55);margin-top:1px;}
+.nav-links{display:flex;align-items:center;gap:.15rem;list-style:none;}
+.nav-links a{
+  color:rgba(240,234,220,.55);text-decoration:none;font-size:.78rem;
+  letter-spacing:.06em;text-transform:uppercase;font-weight:500;
+  padding:.42rem .8rem;border-radius:6px;border:1px solid transparent;
+  transition:all var(--transition);
+}
+.nav-links a:hover,.nav-links a.active{color:var(--gold4);border-color:rgba(196,160,90,.18);background:rgba(196,160,90,.06);}
+.nav-cta-btn{background:rgba(196,160,90,.15)!important;border-color:rgba(196,160,90,.35)!important;color:var(--gold4)!important;}
+.nav-cta-btn:hover{background:rgba(196,160,90,.28)!important;}
+.hamburger{
+  display:none;background:none;border:none;cursor:pointer;
+  color:rgba(240,234,220,.7);font-size:1.2rem;padding:.4rem;border-radius:6px;transition:color .2s;
+}
+.hamburger:hover{color:var(--gold4);}
+
+/* ─── HERO ───────────────────────────────────────────────── */
+.hero{
+  min-height:100vh;padding-top:62px;
+  background:var(--forest);
+  display:grid;grid-template-columns:55% 45%;
+  position:relative;overflow:hidden;
+}
+.hero-bg-pattern{
+  position:absolute;inset:0;opacity:.035;
+  background-image:linear-gradient(rgba(196,160,90,1) 1px,transparent 1px),linear-gradient(90deg,rgba(196,160,90,1) 1px,transparent 1px);
+  background-size:80px 80px;
+}
+.hero-bg-glow{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 60% at 75% 40%,rgba(196,160,90,.07) 0%,transparent 65%),
+    radial-gradient(ellipse 35% 45% at 10% 80%,rgba(36,92,60,.18) 0%,transparent 55%),
+    radial-gradient(ellipse 40% 40% at 50% 0%,rgba(13,43,31,.5) 0%,transparent 60%);
+}
+.hero-left{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:5rem 3.5rem 4rem 5rem;position:relative;z-index:2;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.65rem;
+  background:rgba(196,160,90,.08);border:1px solid rgba(196,160,90,.2);
+  color:var(--gold4);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+  padding:.38rem 1rem;border-radius:3px;margin-bottom:2rem;width:fit-content;
+  animation:slideUp .6s ease .05s both;
+}
+.hero-eyebrow span{width:6px;height:6px;background:var(--gold4);border-radius:50%;box-shadow:0 0 8px rgba(232,204,122,.7);}
+.hero-h1{
+  font-family:'EB Garamond',serif;
+  font-size:clamp(2.8rem,4.8vw,4.6rem);
+  font-weight:600;color:#f0ead8;
+  line-height:1.06;letter-spacing:-.01em;
+  margin-bottom:1.6rem;
+  animation:slideUp .65s ease .15s both;
+}
+.hero-h1 em{font-style:italic;color:var(--gold4);}
+.hero-h1 .sub-line{
+  display:block;font-size:.38em;font-weight:400;font-style:normal;
+  color:rgba(240,234,220,.38);letter-spacing:.12em;text-transform:uppercase;
+  margin-top:.6rem;font-family:'DM Sans',sans-serif;
+}
+.hero-lead{
+  color:rgba(240,234,220,.52);font-size:.98rem;line-height:1.85;
+  max-width:500px;margin-bottom:2.5rem;font-weight:300;
+  animation:slideUp .65s ease .25s both;
+}
+.hero-actions{display:flex;gap:.85rem;flex-wrap:wrap;animation:slideUp .65s ease .35s both;}
+.btn-primary{
+  background:linear-gradient(135deg,var(--gold2),var(--gold3));
+  color:var(--forest);padding:.82rem 2rem;border:none;border-radius:7px;
+  font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;
+  cursor:pointer;letter-spacing:.04em;text-decoration:none;display:inline-flex;
+  align-items:center;gap:.5rem;
+  box-shadow:0 4px 20px rgba(176,141,60,.35);transition:all var(--transition);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(176,141,60,.45);}
+.btn-secondary{
+  background:transparent;color:rgba(240,234,220,.68);
+  padding:.82rem 2rem;border:1px solid rgba(240,234,220,.18);
+  border-radius:7px;font-size:.85rem;text-decoration:none;
+  display:inline-flex;align-items:center;gap:.5rem;transition:all var(--transition);
+}
+.btn-secondary:hover{border-color:rgba(196,160,90,.4);color:var(--gold4);background:rgba(196,160,90,.06);}
+.hero-trust{
+  display:flex;align-items:center;gap:2rem;
+  margin-top:3rem;padding-top:2.5rem;
+  border-top:1px solid rgba(196,160,90,.12);
+  animation:slideUp .65s ease .45s both;
+}
+.trust-stat .num{font-family:'EB Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--gold4);line-height:1;letter-spacing:-.02em;}
+.trust-stat .lbl{font-size:.62rem;color:rgba(240,234,220,.35);letter-spacing:.14em;text-transform:uppercase;margin-top:.2rem;}
+.trust-divider{width:1px;height:40px;background:rgba(196,160,90,.15);}
+.hero-right{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:5rem 5rem 4rem 2rem;position:relative;z-index:2;
+  animation:fadeIn .8s ease .3s both;
+}
+.credentials-stack{display:flex;flex-direction:column;gap:1rem;}
+.cred-card{
+  background:rgba(255,255,255,.04);border:1px solid rgba(196,160,90,.14);
+  border-radius:12px;padding:1.5rem 1.75rem;backdrop-filter:blur(6px);transition:all var(--transition);
+}
+.cred-card:hover{background:rgba(255,255,255,.07);border-color:rgba(196,160,90,.28);}
+.cred-card.featured{
+  background:rgba(196,160,90,.07);border-color:rgba(196,160,90,.3);
+  box-shadow:0 0 0 1px rgba(196,160,90,.1),0 12px 40px rgba(0,0,0,.25);
+}
+.cc-head{display:flex;align-items:center;gap:.85rem;margin-bottom:1rem;}
+.cc-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;background:rgba(196,160,90,.1);border:1px solid rgba(196,160,90,.2);display:flex;align-items:center;justify-content:center;font-size:.9rem;}
+.cc-label{font-size:.65rem;color:rgba(196,160,90,.6);letter-spacing:.15em;text-transform:uppercase;font-weight:600;}
+.cc-value{font-family:'EB Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--gold4);line-height:1.2;}
+.cc-body{font-size:.8rem;color:rgba(240,234,220,.45);line-height:1.7;}
+.reg-details{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:.85rem;}
+.reg-item{background:rgba(255,255,255,.04);border:1px solid rgba(196,160,90,.08);border-radius:7px;padding:.6rem .85rem;}
+.reg-item .k{font-size:.58rem;color:rgba(240,234,220,.3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.18rem;}
+.reg-item .v{font-size:.78rem;color:rgba(240,234,220,.65);font-family:'DM Mono',monospace;}
+.availability-bar{
+  display:flex;align-items:center;gap:.85rem;
+  background:rgba(255,255,255,.03);border:1px solid rgba(196,160,90,.1);border-radius:10px;padding:1rem 1.25rem;
+}
+.avail-dot{width:8px;height:8px;border-radius:50%;background:#4ade80;flex-shrink:0;box-shadow:0 0 8px rgba(74,222,128,.5);animation:pulse-green 2.5s ease-in-out infinite;}
+.avail-text{flex:1;font-size:.78rem;color:rgba(240,234,220,.55);}
+.avail-text strong{display:block;color:rgba(240,234,220,.8);font-weight:500;margin-bottom:.1rem;}
+.avail-badge{font-size:.62rem;color:#4ade80;background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.2);border-radius:4px;padding:.2rem .55rem;font-family:'DM Mono',monospace;white-space:nowrap;}
+
+/* ─── TRUST STRIP ────────────────────────────────────────── */
+.trust-strip{background:#0a1f16;border-top:1px solid rgba(196,160,90,.1);border-bottom:1px solid rgba(196,160,90,.1);padding:1.5rem 3rem;}
+.ts-label{text-align:center;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(196,160,90,.4);margin-bottom:1.1rem;}
+.ts-chips{display:flex;flex-wrap:wrap;gap:.6rem 1rem;justify-content:center;}
+.ts-chip{color:rgba(240,234,220,.38);font-size:.74rem;font-weight:500;padding:.28rem .8rem;border:1px solid rgba(196,160,90,.1);border-radius:3px;letter-spacing:.04em;cursor:default;transition:all .2s;}
+.ts-chip:hover{border-color:rgba(196,160,90,.3);color:var(--gold3);}
+
+/* ─── SECTION COMMONS ────────────────────────────────────── */
+section{padding:6rem 5rem;}
+.sec-eyebrow{display:flex;align-items:center;gap:.65rem;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--sage2);margin-bottom:.85rem;}
+.sec-eyebrow::before{content:'';width:24px;height:2px;background:var(--sage2);border-radius:2px;}
+.sec-h2{font-family:'EB Garamond',serif;font-size:clamp(2rem,3.2vw,3rem);font-weight:600;color:var(--ink);line-height:1.18;margin-bottom:1rem;}
+.sec-rule{width:36px;height:2px;background:linear-gradient(90deg,var(--forest4),var(--gold2));border-radius:2px;margin-bottom:2.75rem;}
+.sec-lead{color:var(--ink3);font-size:.95rem;line-height:1.85;max-width:580px;font-weight:300;}
+.dark-sec .sec-eyebrow{color:var(--gold3);}
+.dark-sec .sec-eyebrow::before{background:var(--gold3);}
+.dark-sec .sec-h2{color:#f0ead8;}
+.dark-sec .sec-rule{background:linear-gradient(90deg,var(--gold2),var(--gold4));}
+.dark-sec .sec-lead{color:rgba(240,234,220,.45);}
+
+/* ─── TRACK RECORD ───────────────────────────────────────── */
+.track{background:var(--white);}
+.track-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ivory3);border:1px solid var(--ivory3);border-radius:12px;overflow:hidden;margin-bottom:3rem;}
+.track-stat{background:var(--white);padding:2.5rem 2rem;text-align:center;transition:background var(--transition);}
+.track-stat:hover{background:var(--ivory);}
+.ts-num{font-family:'EB Garamond',serif;font-size:3rem;font-weight:600;color:var(--forest3);line-height:1;letter-spacing:-.02em;}
+.ts-unit{font-size:1.2rem;color:var(--gold2);}
+.ts-label-2{font-size:.68rem;color:var(--ink4);letter-spacing:.12em;text-transform:uppercase;margin-top:.5rem;line-height:1.4;}
+.ts-sub{font-size:.72rem;color:var(--ink4);margin-top:.25rem;font-style:italic;}
+.sectors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+.sector-card{background:var(--ivory);border:1px solid var(--ivory3);border-radius:10px;padding:1.5rem;display:flex;align-items:flex-start;gap:1rem;transition:all var(--transition);position:relative;overflow:hidden;}
+.sector-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--ivory3);transition:background var(--transition);}
+.sector-card:hover{border-color:var(--bdr2);box-shadow:var(--sh-sm);transform:translateY(-2px);}
+.sector-card:hover::before{background:linear-gradient(to bottom,var(--forest3),var(--gold2));}
+.sector-icon{font-size:1.6rem;flex-shrink:0;margin-top:.1rem;}
+.sector-name{font-family:'EB Garamond',serif;font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:.35rem;}
+.sector-desc{font-size:.78rem;color:var(--ink3);line-height:1.6;}
+
+/* ─── SERVICES ───────────────────────────────────────────── */
+.services{background:var(--ivory2);}
+.services-tabs{display:flex;gap:.5rem;margin-bottom:2.5rem;flex-wrap:wrap;}
+.stab{background:transparent;border:1px solid var(--ivory4);color:var(--ink3);padding:.55rem 1.2rem;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;transition:all var(--transition);letter-spacing:.03em;}
+.stab.active,.stab:hover{background:var(--forest);color:var(--gold4);border-color:var(--forest);}
+.service-panel{display:none;}
+.service-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.sp-title{font-family:'EB Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--ink);margin-bottom:.75rem;}
+.sp-desc{font-size:.88rem;color:var(--ink3);line-height:1.85;margin-bottom:1.75rem;font-weight:300;}
+.sp-scope{margin-bottom:1.75rem;}
+.sp-scope-title{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest4);font-weight:600;margin-bottom:.85rem;}
+.sp-scope-list{list-style:none;display:flex;flex-direction:column;gap:.45rem;}
+.sp-scope-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.83rem;color:var(--ink2);line-height:1.55;}
+.sp-scope-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold2);margin-top:.45em;flex-shrink:0;}
+.sp-standards{display:flex;flex-wrap:wrap;gap:.45rem;}
+.sp-std{font-size:.62rem;font-weight:600;letter-spacing:.06em;padding:.22rem .65rem;border-radius:3px;background:rgba(26,61,42,.08);color:var(--forest4);border:1px solid rgba(26,61,42,.14);}
+.sp-highlights{display:flex;flex-direction:column;gap:.85rem;}
+.sp-highlight{background:var(--white);border:1px solid var(--ivory4);border-radius:10px;padding:1.35rem;transition:all var(--transition);}
+.sp-highlight:hover{border-color:var(--bdr2);box-shadow:var(--sh-sm);}
+.sph-head{display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;}
+.sph-icon{width:32px;height:32px;border-radius:7px;background:linear-gradient(135deg,var(--forest),var(--forest3));display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sph-icon i{color:rgba(232,204,122,.75);font-size:.78rem;}
+.sph-title{font-family:'EB Garamond',serif;font-size:.95rem;font-weight:600;color:var(--ink);}
+.sph-body{font-size:.78rem;color:var(--ink3);line-height:1.65;}
+
+/* ─── PROJECTS ───────────────────────────────────────────── */
+.projects{background:linear-gradient(175deg,var(--forest) 0%,var(--forest2) 50%,var(--forest) 100%);position:relative;overflow:hidden;}
+.projects::before{content:'';position:absolute;inset:0;opacity:.04;background-image:linear-gradient(rgba(196,160,90,1) 1px,transparent 1px),linear-gradient(90deg,rgba(196,160,90,1) 1px,transparent 1px);background-size:60px 60px;}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;position:relative;z-index:1;}
+.proj-card{background:rgba(255,255,255,.04);border:1px solid rgba(196,160,90,.1);border-radius:12px;overflow:hidden;transition:all .28s;}
+.proj-card:hover{background:rgba(255,255,255,.07);border-color:rgba(196,160,90,.25);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.3);}
+.proj-header{padding:1.5rem 1.5rem 1.1rem;border-bottom:1px solid rgba(196,160,90,.08);display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;}
+.proj-client{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:rgba(196,160,90,.6);}
+.proj-title-d{font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:600;color:rgba(240,234,220,.85);margin-top:.3rem;line-height:1.3;}
+.proj-status{flex-shrink:0;font-size:.58rem;font-weight:600;letter-spacing:.06em;padding:.22rem .6rem;border-radius:3px;text-transform:uppercase;margin-top:.1rem;}
+.status-done{background:rgba(74,222,128,.1);color:#4ade80;border:1px solid rgba(74,222,128,.2);}
+.status-live{background:rgba(196,160,90,.12);color:var(--gold3);border:1px solid rgba(196,160,90,.25);}
+.proj-body-d{padding:1.1rem 1.5rem 1.5rem;}
+.proj-desc-d{font-size:.78rem;color:rgba(240,234,220,.4);line-height:1.7;margin-bottom:1rem;}
+.proj-meta{display:flex;flex-wrap:wrap;gap:.4rem;}
+.proj-tag-d{font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .55rem;border-radius:3px;background:rgba(36,92,60,.25);color:rgba(78,148,104,.9);border:1px solid rgba(36,92,60,.3);}
+
+/* ─── CAPABILITIES ───────────────────────────────────────── */
+.capabilities{background:var(--white);}
+.cap-list{display:flex;flex-direction:column;gap:1rem;}
+.cap-item{display:flex;gap:1rem;align-items:flex-start;background:var(--ivory);border:1px solid var(--ivory3);border-radius:10px;padding:1.35rem;transition:all var(--transition);}
+.cap-item:hover{border-color:var(--bdr2);box-shadow:var(--sh-sm);transform:translateX(3px);}
+.cap-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,var(--forest),var(--forest3));display:flex;align-items:center;justify-content:center;}
+.cap-icon i{color:rgba(232,204,122,.8);font-size:.85rem;}
+.cap-text h4{font-family:'EB Garamond',serif;font-size:.95rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;}
+.cap-text p{font-size:.78rem;color:var(--ink3);line-height:1.65;}
+
+/* ─── WHY HDG ─────────────────────────────────────────────── */
+.why{background:var(--ivory2);}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;}
+.why-card{background:var(--white);border:1px solid var(--ivory3);border-radius:12px;padding:2rem;transition:all var(--transition);position:relative;overflow:hidden;}
+.why-card::after{content:'';position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at 100% 0%,rgba(13,43,31,.04) 0%,transparent 70%);border-radius:0 12px 0 80px;}
+.why-card:hover{border-color:var(--bdr2);box-shadow:var(--sh-md);transform:translateY(-3px);}
+.wc-icon{font-size:2rem;margin-bottom:1.25rem;}
+.wc-title{font-family:'EB Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--ink);margin-bottom:.65rem;}
+.wc-body{font-size:.82rem;color:var(--ink3);line-height:1.75;font-weight:300;}
+
+/* ─── TESTIMONIALS ───────────────────────────────────────── */
+.testimonials{background:var(--ivory);}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+.test-card{background:var(--white);border:1px solid var(--ivory3);border-radius:12px;padding:2rem;transition:all var(--transition);}
+.test-card:hover{border-color:var(--bdr2);box-shadow:var(--sh-md);}
+.test-quote{font-size:2.5rem;color:var(--ivory3);line-height:1;margin-bottom:1rem;font-family:'EB Garamond',serif;}
+.test-body{font-size:.85rem;color:var(--ink2);line-height:1.8;font-style:italic;font-family:'EB Garamond',serif;margin-bottom:1.5rem;}
+.test-author{display:flex;align-items:center;gap:.75rem;}
+.ta-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--forest),var(--forest3));display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-weight:600;color:var(--gold3);font-size:.85rem;flex-shrink:0;}
+.ta-name{font-size:.82rem;font-weight:600;color:var(--ink);}
+.ta-role{font-size:.7rem;color:var(--ink4);}
+
+/* ─── FAQ ────────────────────────────────────────────────── */
+.faq{background:var(--ivory2);}
+.faq-list{display:flex;flex-direction:column;gap:.75rem;max-width:800px;}
+.faq-item{background:var(--white);border:1px solid var(--ivory3);border-radius:10px;overflow:hidden;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;cursor:pointer;font-size:.88rem;font-weight:500;color:var(--ink);transition:all .2s;gap:1rem;}
+.faq-q:hover{background:var(--ivory);color:var(--forest3);}
+.faq-q i{color:var(--ink4);font-size:.75rem;flex-shrink:0;transition:transform .25s;}
+.faq-item.open .faq-q i{transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;}
+.faq-item.open .faq-a{max-height:300px;}
+.faq-a-inner{padding:.25rem 1.5rem 1.25rem;font-size:.82rem;color:var(--ink3);line-height:1.8;border-top:1px solid var(--ivory3);}
+
+/* ─── CONTACT ────────────────────────────────────────────── */
+.contact{background:var(--ivory);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.contact-details{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem;}
+.cd-item{display:flex;gap:.9rem;align-items:flex-start;}
+.cd-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;background:rgba(26,61,42,.08);border:1px solid rgba(26,61,42,.12);display:flex;align-items:center;justify-content:center;}
+.cd-icon i{color:var(--forest4);font-size:.82rem;}
+.cd-label{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest4);font-weight:600;margin-bottom:.15rem;}
+.cd-value{font-size:.84rem;color:var(--ink2);line-height:1.6;}
+.cd-value a{color:inherit;}
+.cd-value a:hover{color:var(--forest3);}
+.map-embed{background:var(--ivory3);border:1px solid var(--ivory4);border-radius:10px;height:160px;overflow:hidden;margin-top:1.5rem;}
+.map-embed iframe{width:100%;height:100%;border:none;}
+
+/* ─── CONTACT FORM ───────────────────────────────────────── */
+.contact-form-box{background:var(--white);border:1px solid var(--ivory3);border-radius:14px;padding:2.25rem;box-shadow:var(--sh-sm);}
+.form-title{font-family:'EB Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--ink);margin-bottom:1.5rem;}
+.fg{margin-bottom:.9rem;}
+.fg label{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);margin-bottom:.38rem;}
+.fg input,.fg textarea,.fg select{
+  width:100%;background:var(--ivory);border:1px solid var(--ivory4);
+  border-radius:7px;padding:.7rem .95rem;color:var(--ink);
+  font-family:'DM Sans',sans-serif;font-size:.86rem;outline:none;
+  transition:border-color .2s,box-shadow .2s;
+  -webkit-appearance:none;
+}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--forest4);box-shadow:0 0 0 3px rgba(26,61,42,.07);}
+.fg input.error,.fg textarea.error,.fg select.error{border-color:#c0392b;box-shadow:0 0 0 3px rgba(192,57,43,.08);}
+.fg textarea{resize:vertical;min-height:90px;}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;}
+.field-error{font-size:.68rem;color:#c0392b;margin-top:.3rem;display:none;}
+.field-error.show{display:block;}
+
+/* Submit button states */
+.submit-btn{
+  width:100%;background:linear-gradient(135deg,var(--forest),var(--forest3));
+  color:#f0ead8;padding:.9rem;border:none;border-radius:9px;
+  font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:600;
+  cursor:pointer;letter-spacing:.04em;transition:all var(--transition);
+  box-shadow:0 4px 20px rgba(13,43,31,.25);display:flex;align-items:center;justify-content:center;gap:.6rem;
+}
+.submit-btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 8px 28px rgba(13,43,31,.35);}
+.submit-btn:disabled{opacity:.75;cursor:not-allowed;transform:none;}
+.submit-btn.success{background:linear-gradient(135deg,#1a4a3a,#2f7560)!important;cursor:default;}
+.submit-btn.error-state{background:linear-gradient(135deg,#7b1c1c,#a02424)!important;}
+.form-note{text-align:center;font-size:.68rem;color:var(--ink4);margin-top:.75rem;}
+.form-note a{color:var(--forest4);}
+.form-note a:hover{text-decoration:underline;}
+
+/* Inline toast for form feedback */
+.form-toast{
+  display:none;padding:.75rem 1rem;border-radius:8px;font-size:.8rem;margin-bottom:1rem;
+  align-items:center;gap:.6rem;
+}
+.form-toast.show{display:flex;}
+.form-toast.success{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.25);color:#1a5c38;}
+.form-toast.error{background:rgba(192,57,43,.08);border:1px solid rgba(192,57,43,.2);color:#7b1c1c;}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer{background:#07150f;padding:3rem 5rem 2rem;border-top:1px solid rgba(196,160,90,.1);}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(196,160,90,.08);}
+.footer-logo{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;}
+.footer-logo .logo-emblem{width:36px;height:36px;font-size:11px;}
+.footer-name{font-family:'EB Garamond',serif;font-size:.95rem;font-weight:600;color:rgba(240,234,220,.6);}
+.footer-name small{display:block;font-family:'DM Sans',sans-serif;font-size:.58rem;color:rgba(196,160,90,.4);letter-spacing:.15em;text-transform:uppercase;}
+.footer-about{font-size:.75rem;color:rgba(240,234,220,.3);line-height:1.75;margin-bottom:1rem;}
+.footer-reg{font-size:.65rem;font-family:'DM Mono',monospace;color:rgba(196,160,90,.35);line-height:1.6;}
+.footer-col-title{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(196,160,90,.4);font-weight:600;margin-bottom:1rem;}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+.footer-links a{color:rgba(240,234,220,.35);text-decoration:none;font-size:.78rem;transition:color .2s;}
+.footer-links a:hover{color:var(--gold4);}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;font-size:.68rem;color:rgba(240,234,220,.2);}
+.footer-bottom a{color:rgba(240,234,220,.3);text-decoration:none;margin-left:1.25rem;}
+.footer-bottom a:hover{color:rgba(240,234,220,.6);}
+
+/* ─── BACK TO TOP ────────────────────────────────────────── */
+.back-top{
+  position:fixed;bottom:2rem;right:2rem;z-index:90;
+  width:40px;height:40px;border-radius:8px;
+  background:var(--forest3);border:1px solid rgba(196,160,90,.2);
+  color:var(--gold4);display:flex;align-items:center;justify-content:center;
+  cursor:pointer;text-decoration:none;font-size:.8rem;
+  box-shadow:0 4px 16px rgba(0,0,0,.2);
+  opacity:0;transform:translateY(10px);
+  transition:all var(--transition);pointer-events:none;
+}
+.back-top.visible{opacity:1;transform:translateY(0);pointer-events:all;}
+.back-top:hover{background:var(--forest4);transform:translateY(-2px);}
+
+/* ─── ANIMATIONS ─────────────────────────────────────────── */
+@keyframes slideUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse-green{0%,100%{box-shadow:0 0 0 0 rgba(74,222,128,.4)}50%{box-shadow:0 0 0 5px rgba(74,222,128,0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fa-spin{animation:spin .8s linear infinite;}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media(max-width:1200px){
+  section{padding:5rem 3.5rem;}
+  .hero-left{padding:4rem 2.5rem 3.5rem 3.5rem;}
+  .hero-right{padding:4rem 3.5rem 3.5rem 1.5rem;}
+  footer{padding:3rem 3.5rem 2rem;}
+  .footer-top{grid-template-columns:1.2fr 1fr 1fr;gap:2rem;}
+  .footer-top .footer-col:last-child{display:none;}
+}
+@media(max-width:900px){
+  section{padding:4rem 2rem;}
+  .hero{grid-template-columns:1fr;}
+  .hero-right{display:none;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;align-items:center;justify-content:center;}
+  .mobile-overlay{display:flex;}
+  .track-grid{grid-template-columns:repeat(2,1fr);}
+  .sectors-grid{grid-template-columns:1fr 1fr;}
+  .service-panel.active{grid-template-columns:1fr;}
+  .proj-grid{grid-template-columns:1fr 1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .test-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  footer{padding:2.5rem 2rem 1.5rem;}
+  .footer-bottom{flex-direction:column;gap:.75rem;text-align:center;}
+  nav{padding:0 1.25rem;}
+}
+@media(max-width:600px){
+  .track-grid{grid-template-columns:1fr 1fr;}
+  .sectors-grid{grid-template-columns:1fr;}
+  .proj-grid{grid-template-columns:1fr;}
+  .fg-row{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;}
+  .hero-trust{flex-wrap:wrap;gap:1.25rem;}
+  section{padding:3.5rem 1.25rem;}
+  .trust-strip{padding:1.5rem 1.25rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ── MOBILE OVERLAY ─────────────────────────────────────── -->
+<div class="mobile-overlay" id="mobileMenu">
+  <button class="mob-close" onclick="closeMobileMenu()"><i class="fas fa-times"></i></button>
+  <nav class="mob-links">
+    <a href="#track" onclick="closeMobileMenu()">Track Record</a>
+    <a href="#services" onclick="closeMobileMenu()">Services</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+  </nav>
+  <a href="#contact" class="mob-cta" onclick="closeMobileMenu()">Get In Touch</a>
+  <div class="mob-contact">
+    <p>Contact Us</p>
+    <a href="tel:+919958057878">+91 99580 57878</a>
+    <a href="mailto:info@hdgconstructions.in">info@hdgconstructions.in</a>
+  </div>
+</div>
+
+<!-- ── NAV ────────────────────────────────────────────────── -->
+<nav id="mainNav">
+  <a href="#home" class="nav-logo">
+    <div class="logo-emblem">HDG</div>
+    <div class="nav-name">M/S Harcharan Dass Gupta<small>Class 1A CPWD Contractor · Est. 1986</small></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#track">Track Record</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta-btn">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-bg-glow"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span></span>Class 1A CPWD · Established 1986</div>
+    <h1 class="hero-h1">
+      India's Preferred<br><em>Class 1A CPWD</em> Contractor —<br>Government & Institutional Construction
+      <span class="sub-line">Since 1986 · Civil · MEP · Interiors · Specialized Systems</span>
+    </h1>
+    <p class="hero-lead">Government institutions, defense establishments, premier universities — M/S Harcharan Dass Gupta has delivered complex construction projects reliably for 38 years, under CPWD's highest contractor classification.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i>Request a Quote</a>
+      <a href="#projects" class="btn-secondary">View Projects <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-stat"><div class="num" id="c1">38<span class="ts-unit">+</span></div><div class="lbl">Years<br>Established</div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat"><div class="num">1A</div><div class="lbl">CPWD<br>Class</div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat"><div class="num" id="c2">50<span class="ts-unit">+</span></div><div class="lbl">Projects<br>Completed</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="credentials-stack">
+      <div class="cred-card featured">
+        <div class="cc-head">
+          <div class="cc-icon">🏛️</div>
+          <div>
+            <div class="cc-label">Registration Status</div>
+            <div class="cc-value">Class 1A — CPWD Registered</div>
+          </div>
+        </div>
+        <div class="cc-body">The highest classification for government construction contractors in India. Eligible for large-scale civil, MEP, and specialized works across all central government departments and PSUs.</div>
+        <div class="reg-details">
+          <div class="reg-item"><div class="k">Established</div><div class="v">1986</div></div>
+          <div class="reg-item"><div class="k">Category</div><div class="v">Class 1A</div></div>
+          <div class="reg-item"><div class="k">Base</div><div class="v">New Delhi</div></div>
+          <div class="reg-item"><div class="k">Coverage</div><div class="v">Pan-India</div></div>
+        </div>
+      </div>
+      <div class="cred-card">
+        <div class="cc-head">
+          <div class="cc-icon">📋</div>
+          <div>
+            <div class="cc-label">Service Scope</div>
+            <div class="cc-value">Full-Cycle Delivery</div>
+          </div>
+        </div>
+        <div class="cc-body">Civil construction, MEP works, interior fit-out, and specialized systems — all under one contract. Single-point accountability from groundbreaking to handover.</div>
+      </div>
+      <div class="availability-bar">
+        <div class="avail-dot"></div>
+        <div class="avail-text">
+          <strong>Accepting New Tenders</strong>
+          Currently evaluating projects for FY 2025–26. Capacity available for institutional and government mandates.
+        </div>
+        <div class="avail-badge">OPEN</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST STRIP ─────────────────────────────────────────── -->
+<div class="trust-strip" id="clients">
+  <div class="ts-label">Trusted by leading government & institutional clients</div>
+  <div class="ts-chips">
+    <div class="ts-chip">Delhi Police</div>
+    <div class="ts-chip">University of Delhi</div>
+    <div class="ts-chip">CPWD</div>
+    <div class="ts-chip">BSF</div>
+    <div class="ts-chip">DSIIDC</div>
+    <div class="ts-chip">Gurugram University</div>
+    <div class="ts-chip">University of Ladakh</div>
+    <div class="ts-chip">NBCC (Navratna CPSE)</div>
+    <div class="ts-chip">ISRO</div>
+    <div class="ts-chip">Jaypee Infratech</div>
+    <div class="ts-chip">HSIIDC</div>
+    <div class="ts-chip">Punjab National Bank</div>
+    <div class="ts-chip">Hindustan Prefab Ltd.</div>
+    <div class="ts-chip">HSVP</div>
+    <div class="ts-chip">Haryana Parivar Pehchan</div>
+  </div>
+</div>
+
+<!-- ── TRACK RECORD ────────────────────────────────────────── -->
+<section class="track" id="track">
+  <div class="sec-eyebrow reveal">Track Record</div>
+  <div class="sec-h2 reveal">38 Years of Proven Delivery</div>
+  <div class="sec-rule reveal"></div>
+  <div class="sec-lead reveal" style="margin-bottom:2.75rem;">From extreme-altitude campuses in Ladakh to defense establishments and national institutions — HDG has executed complex, large-scale projects across diverse geographies and sectors without a single contract dispute.</div>
+  <div class="track-grid reveal">
+    <div class="track-stat"><div class="ts-num">50<span class="ts-unit">+</span></div><div class="ts-label-2">Projects<br>Completed</div><div class="ts-sub">Since 1986</div></div>
+    <div class="track-stat"><div class="ts-num">₹500<span class="ts-unit">Cr+</span></div><div class="ts-label-2">Contract Value<br>Delivered</div><div class="ts-sub">Government & Institutional</div></div>
+    <div class="track-stat"><div class="ts-num">6</div><div class="ts-label-2">States &<br>UTs Covered</div><div class="ts-sub">Delhi · Haryana · UP · J&K · Ladakh · Punjab</div></div>
+  </div>
+  <div class="sectors-grid reveal" style="margin-top:1.25rem;">
+    <div class="sector-card"><div class="sector-icon">🏛️</div><div><div class="sector-name">Government & PSU</div><div class="sector-desc">CPWD, NBCC, DSIIDC, HSIIDC, Hindustan Prefab — central and state government bodies trusting HDG for mission-critical infrastructure.</div></div></div>
+    <div class="sector-card"><div class="sector-icon">🎓</div><div><div class="sector-name">Educational Institutions</div><div class="sector-desc">University of Delhi, Gurugram University, University of Ladakh, Jaypee Noida — full campus construction from civil to MEP to interiors.</div></div></div>
+    <div class="sector-card"><div class="sector-icon">🛡️</div><div><div class="sector-name">Defense & Security</div><div class="sector-desc">BSF, Delhi Police — high-security facility construction with strict compliance, confidentiality, and timeline requirements consistently met.</div></div></div>
+    <div class="sector-card"><div class="sector-icon">🚀</div><div><div class="sector-name">Research & Science</div><div class="sector-desc">ISRO facility infrastructure — specialized civil and MEP works meeting critical-system precision requirements and stringent quality protocols.</div></div></div>
+    <div class="sector-card"><div class="sector-icon">🏦</div><div><div class="sector-name">Financial Institutions</div><div class="sector-desc">Punjab National Bank branch fit-outs and renovations delivered to banking-grade specifications with minimal operational disruption.</div></div></div>
+    <div class="sector-card"><div class="sector-icon">🏗️</div><div><div class="sector-name">Residential & Commercial</div><div class="sector-desc">NBCC multi-tower housing, HSVP residential, and commercial complexes — large-scale mixed-use construction across North India.</div></div></div>
+  </div>
+</section>
+
+<!-- ── SERVICES ────────────────────────────────────────────── -->
+<section class="services" id="services">
+  <div class="sec-eyebrow reveal">What We Do</div>
+  <div class="sec-h2 reveal">Our Services</div>
+  <div class="sec-rule reveal"></div>
+  <div class="services-tabs reveal">
+    <button class="stab active" onclick="showService('civil',this)">Civil Construction</button>
+    <button class="stab" onclick="showService('mep',this)">MEP Works</button>
+    <button class="stab" onclick="showService('interiors',this)">Interiors & Fit-Out</button>
+    <button class="stab" onclick="showService('specialized',this)">Specialized Systems</button>
+  </div>
+
+  <div class="service-panel active" id="svc-civil">
+    <div><div class="sp-title">Civil Construction</div><div class="sp-desc">HDG's core competency — RCC-framed structures, load-bearing masonry, foundation engineering, and large-scale multi-storey buildings. Delivered to IS code standards across institutional, defense, educational, and commercial sectors for 38 years.</div><div class="sp-scope"><div class="sp-scope-title">Scope of Work</div><ul class="sp-scope-list"><li>Foundation design and construction — raft, pile, and isolated footings</li><li>RCC-framed multi-storey structures up to 15+ floors</li><li>Load-bearing masonry construction</li><li>Site development — roads, compound walls, drainage, landscaping</li><li>Renovation, retrofitting, and structural strengthening</li><li>Extreme-altitude and difficult-terrain construction</li><li>Pre-engineered building systems and prefabricated structures</li></ul></div><div class="sp-scope-title" style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest4);font-weight:600;margin-bottom:.65rem;">Applicable Standards</div><div class="sp-standards"><span class="sp-std">IS 456:2000</span><span class="sp-std">IS 1893</span><span class="sp-std">IS 13920</span><span class="sp-std">NBC 2016</span><span class="sp-std">CPWD DSR</span><span class="sp-std">BIS Code</span></div></div>
+    <div class="sp-highlights"><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-mountain"></i></div><div class="sph-title">Extreme Conditions Expertise</div></div><div class="sph-body">Delivered University of Ladakh campus at high altitude with extreme seasonal variation — one of the most demanding civil construction environments in India.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-drafting-compass"></i></div><div class="sph-title">In-House Design Team</div></div><div class="sph-body">Structural and architectural drawing prepared internally — error-free, CPWD-compliant drawings that reduce revision cycles and approval delays.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-shield-alt"></i></div><div class="sph-title">Defense-Grade Compliance</div></div><div class="sph-body">BSF and Delhi Police facilities completed on schedule with full security clearance compliance and operational requirements met.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-chart-line"></i></div><div class="sph-title">Real-Time Progress Tracking</div></div><div class="sph-body">Floor-by-floor milestones tracked digitally. Clients and project officers have live visibility into planned vs actual progress at all times.</div></div></div>
+  </div>
+
+  <div class="service-panel" id="svc-mep">
+    <div><div class="sp-title">MEP Works</div><div class="sp-desc">Mechanical, Electrical, and Plumbing systems designed and installed to national standards. HDG integrates MEP within civil construction timelines — eliminating the coordination gap that causes most project delays.</div><div class="sp-scope"><div class="sp-scope-title">Scope of Work</div><ul class="sp-scope-list"><li>LT/HT electrical systems, substation, and distribution panels</li><li>Internal and external electrification, lighting, and power layouts</li><li>HVAC systems — centralized, split, and ducted</li><li>Plumbing, sanitation, and sewage treatment plants</li><li>Fire-fighting systems — sprinklers, hydrants, and detection</li><li>Lifts, escalators, and vertical transportation</li><li>Generator and UPS backup systems</li></ul></div><div class="sp-scope-title" style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest4);font-weight:600;margin-bottom:.65rem;">Applicable Standards</div><div class="sp-standards"><span class="sp-std">IE Rules 1956</span><span class="sp-std">NBC Fire</span><span class="sp-std">IS 1646</span><span class="sp-std">ASHRAE</span><span class="sp-std">BEE</span><span class="sp-std">CPWD Specs</span></div></div>
+    <div class="sp-highlights"><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-bolt"></i></div><div class="sph-title">Integrated Electrical Works</div></div><div class="sph-body">Full electrical scope from HT substation to final outlets — coordinated with civil structure from foundation stage to avoid rework.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-fire-extinguisher"></i></div><div class="sph-title">Fire Safety Systems</div></div><div class="sph-body">NBC-compliant fire detection, suppression, and hydrant systems — including NOC-ready documentation for fire department clearances.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-wind"></i></div><div class="sph-title">HVAC Design & Install</div></div><div class="sph-body">Centralized and split AC systems sized and installed for institutional loads — including Gurugram University's multi-block HVAC infrastructure.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-tint"></i></div><div class="sph-title">Water & Sanitation</div></div><div class="sph-body">Plumbing design, STP, ETP, and water treatment for large institutional occupancies — including ISRO facility critical utilities.</div></div></div>
+  </div>
+
+  <div class="service-panel" id="svc-interiors">
+    <div><div class="sp-title">Interiors & Fit-Out</div><div class="sp-desc">From institutional office environments to banking branches and academic spaces — HDG delivers interiors that are functional, compliant, and built to last. No subcontracting guesswork; our in-house teams handle every finish.</div><div class="sp-scope"><div class="sp-scope-title">Scope of Work</div><ul class="sp-scope-list"><li>False ceiling — gypsum, grid, and metal systems</li><li>Flooring — vitrified, marble, granite, raised access</li><li>Partitioning — glass, gypsum, modular systems</li><li>Joinery — doors, windows, furniture, and millwork</li><li>Wall finishes — painting, panelling, wallcovering</li><li>Kitchen and pantry fitouts for institutional occupancies</li><li>Signage, branding, and graphic elements</li></ul></div><div class="sp-scope-title" style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest4);font-weight:600;margin-bottom:.65rem;">Applicable Standards</div><div class="sp-standards"><span class="sp-std">IS 1489</span><span class="sp-std">NBC Interior</span><span class="sp-std">BIS Paints</span><span class="sp-std">CPWD Spec</span><span class="sp-std">GRIHA</span></div></div>
+    <div class="sp-highlights"><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-university"></i></div><div class="sph-title">Institutional-Grade Finishes</div></div><div class="sph-body">High-durability, low-maintenance finishes chosen for institutional occupancies — government offices, university spaces, and banking environments.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-landmark"></i></div><div class="sph-title">Banking Branch Fit-Out</div></div><div class="sph-body">PNB branch interiors delivered to RBI-compliant specifications — security grilles, cash counter layouts, vault integration, and operational continuity maintained.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-tools"></i></div><div class="sph-title">Zero Disruption Execution</div></div><div class="sph-body">Renovation and fit-out work completed in phased sequences to ensure client operations are uninterrupted — especially for active banking and office environments.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-check-circle"></i></div><div class="sph-title">Snag-Free Handover</div></div><div class="sph-body">Structured pre-handover inspection checklist ensures zero defect handover — reducing post-handover warranty calls and client friction.</div></div></div>
+  </div>
+
+  <div class="service-panel" id="svc-specialized">
+    <div><div class="sp-title">Specialized Systems</div><div class="sp-desc">Complex, precision-engineered systems for research facilities, defense establishments, and high-security environments. HDG's specialized division manages critical installations that standard contractors cannot undertake.</div><div class="sp-scope"><div class="sp-scope-title">Scope of Work</div><ul class="sp-scope-list"><li>Clean room and controlled environment construction</li><li>Security systems — CCTV, access control, perimeter fencing</li><li>Data centre and server room infrastructure</li><li>Acoustic treatment and vibration isolation</li><li>Laboratory infrastructure — fume hoods, gas manifolds, specialty flooring</li><li>Solar PV and renewable energy installations</li><li>Heavy-duty industrial flooring and coatings</li></ul></div><div class="sp-scope-title" style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest4);font-weight:600;margin-bottom:.65rem;">Applicable Standards</div><div class="sp-standards"><span class="sp-std">ISO 14644</span><span class="sp-std">TIA-942</span><span class="sp-std">ISRO QA</span><span class="sp-std">BIS 2374</span><span class="sp-std">MNRE</span><span class="sp-std">MHA Guidelines</span></div></div>
+    <div class="sp-highlights"><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-rocket"></i></div><div class="sph-title">ISRO Facility Work</div></div><div class="sph-body">Civil and MEP infrastructure for ISRO facilities — executed to precision tolerances and critical-system compliance standards required by India's space agency.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-flask"></i></div><div class="sph-title">Laboratory Infrastructure</div></div><div class="sph-body">Science and technology block at Jaypee Noida — specialized laboratory infrastructure including fume extraction, utility distribution, and cleanable surfaces.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-lock"></i></div><div class="sph-title">High-Security Installations</div></div><div class="sph-body">Security perimeter, access control, and surveillance infrastructure for BSF and Delhi Police facilities — clearance-compliant and operationally tested.</div></div><div class="sp-highlight"><div class="sph-head"><div class="sph-icon"><i class="fas fa-solar-panel"></i></div><div class="sph-title">Renewable Systems</div></div><div class="sph-body">Solar PV rooftop and ground-mounted installations for institutional campuses — MNRE-compliant, net-metered, and subsidy-eligible.</div></div></div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ─────────────────────────────────────────────── -->
+<section class="projects dark-sec" id="projects">
+  <div class="sec-eyebrow reveal">Portfolio</div>
+  <div class="sec-h2 reveal">Selected Projects</div>
+  <div class="sec-rule reveal"></div>
+  <div class="proj-grid">
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">University of Ladakh · NBCC</div><div class="proj-title-d">Ladakh University Campus</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Multi-block academic campus at high altitude — science block, administrative block, and residential facilities. Full civil, MEP, and interior scope in extreme-climate conditions.</div><div class="proj-meta"><span class="proj-tag-d">Civil</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">Interiors</span><span class="proj-tag-d">High Altitude</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">Jaypee Infratech</div><div class="proj-title-d">Jaypee Noida — Science & Tech Block</div></div><div class="proj-status status-live">Ongoing</div></div><div class="proj-body-d"><div class="proj-desc-d">9-floor RCC-framed structure with specialized laboratories, smart classrooms, and centralized MEP infrastructure. Progress tracked digitally floor-by-floor.</div><div class="proj-meta"><span class="proj-tag-d">Civil</span><span class="proj-tag-d">Structural</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">Labs</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">ISRO</div><div class="proj-title-d">ISRO Facility Infrastructure</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Specialized civil and MEP infrastructure for Indian Space Research Organisation. High-precision requirements and critical-system compliance — zero defects on handover.</div><div class="proj-meta"><span class="proj-tag-d">Specialized</span><span class="proj-tag-d">Civil</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">Critical</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">BSF</div><div class="proj-title-d">BSF Residential & Operational Facilities</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Residential quarters, operational buildings, and compound works for Border Security Force. Strict security compliance and timeline requirements consistently met.</div><div class="proj-meta"><span class="proj-tag-d">Defense</span><span class="proj-tag-d">Civil</span><span class="proj-tag-d">Compliance</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">Gurugram University</div><div class="proj-title-d">Academic & Administrative Blocks</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Multi-storey academic and administrative block construction with MEP systems, fire safety, HVAC, and full interior works for the newly established state university.</div><div class="proj-meta"><span class="proj-tag-d">Civil</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">HVAC</span><span class="proj-tag-d">Fire Safety</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">Punjab National Bank</div><div class="proj-title-d">PNB Branch Fit-Outs & Renovation</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Interior fit-out, structural upgrades, and MEP works across multiple PNB branches — delivered to banking-grade specifications with zero operational disruption.</div><div class="proj-meta"><span class="proj-tag-d">Interiors</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">Banking</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">NBCC · Navratna CPSE</div><div class="proj-title-d">NBCC Housing & Commercial Projects</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Multi-tower residential and commercial construction under NBCC. Complete civil, MEP, and finishing scope across multiple project sites in NCR.</div><div class="proj-meta"><span class="proj-tag-d">Residential</span><span class="proj-tag-d">Civil</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">CPSE</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">University of Delhi · CPWD</div><div class="proj-title-d">Delhi University Campus Infrastructure</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Civil construction, renovation, and MEP upgrades across Delhi University campus buildings under CPWD supervision with heritage-sensitive construction practices.</div><div class="proj-meta"><span class="proj-tag-d">Civil</span><span class="proj-tag-d">Renovation</span><span class="proj-tag-d">CPWD</span><span class="proj-tag-d">MEP</span></div></div></div>
+    <div class="proj-card reveal"><div class="proj-header"><div><div class="proj-client">DSIIDC</div><div class="proj-title-d">Industrial Development Complex</div></div><div class="proj-status status-done">Completed</div></div><div class="proj-body-d"><div class="proj-desc-d">Large-scale industrial and commercial construction for Delhi State Industrial & Infrastructure Development Corporation — civil works, MEP, and full site infrastructure.</div><div class="proj-meta"><span class="proj-tag-d">Civil</span><span class="proj-tag-d">MEP</span><span class="proj-tag-d">Industrial</span></div></div></div>
+  </div>
+</section>
+
+<!-- ── CAPABILITIES ─────────────────────────────────────────── -->
+<section class="capabilities" id="capabilities">
+  <div class="sec-eyebrow reveal">Technology & Operations</div>
+  <div class="sec-h2 reveal">Built on Transparency</div>
+  <div class="sec-rule reveal"></div>
+  <div style="max-width:700px;">
+    <div class="cap-list">
+      <div class="cap-item reveal"><div class="cap-icon"><i class="fas fa-chart-line"></i></div><div class="cap-text"><h4>Real-Time Project Tracking</h4><p>Floor-by-floor progress visibility with planned vs forecast comparisons, automated delay flagging, and daily MIS reports across all active sites.</p></div></div>
+      <div class="cap-item reveal"><div class="cap-icon"><i class="fas fa-boxes"></i></div><div class="cap-text"><h4>Inventory & Procurement Control</h4><p>Multi-site material tracking with category-wise visibility and low-stock alerts — eliminating procurement delays that stall site progress.</p></div></div>
+      <div class="cap-item reveal"><div class="cap-icon"><i class="fas fa-user-check"></i></div><div class="cap-text"><h4>Workforce Management</h4><p>Digital attendance, onboarding, and workforce records for all site personnel — ensuring statutory compliance and payroll accuracy.</p></div></div>
+      <div class="cap-item reveal"><div class="cap-icon"><i class="fas fa-file-invoice-dollar"></i></div><div class="cap-text"><h4>Transparent Payment Systems</h4><p>Automated subcontractor payment workflows with complete audit trails — trust and compliance at every transaction, no disputes.</p></div></div>
+      <div class="cap-item reveal"><div class="cap-icon"><i class="fas fa-video"></i></div><div class="cap-text"><h4>Live Site Camera Access</h4><p>Clients and project officers can view live site footage from any location — reducing site visits and enabling faster decision-making.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY HDG ──────────────────────────────────────────────── -->
+<section class="why" id="why">
+  <div class="sec-eyebrow reveal">Why Choose HDG</div>
+  <div class="sec-h2 reveal">The HDG Difference</div>
+  <div class="sec-rule reveal"></div>
+  <div class="why-grid">
+    <div class="why-card reveal"><div class="wc-icon">🏛️</div><div class="wc-title">Government's Preferred Contractor</div><div class="wc-body">Class 1A CPWD registration — India's highest classification for government construction. Preferred by CPWD, NBCC, DSIIDC, HSIIDC, and multiple central and state bodies across 38 years. No conflict, no delay, no dispute on record.</div></div>
+    <div class="why-card reveal"><div class="wc-icon">🎯</div><div class="wc-title">Single-Point Accountability</div><div class="wc-body">One contract. One point of contact. Civil, MEP, Interiors, and Specialized Systems all flow through HDG — eliminating the coordination gaps and blame-shifting that multi-contractor setups create. Your project, our full responsibility.</div></div>
+    <div class="why-card reveal"><div class="wc-icon">📡</div><div class="wc-title">Technology-Backed Visibility</div><div class="wc-body">Clients have real-time access to project progress, inventory status, workforce data, and site cameras — no more relying on periodic site visits or verbal updates. Complete transparency as standard, not as a premium.</div></div>
+    <div class="why-card reveal"><div class="wc-icon">🌐</div><div class="wc-title">Proven Geographic Reach</div><div class="wc-body">Delivered projects across Delhi, Haryana, Uttar Pradesh, Punjab, Jammu & Kashmir, and Ladakh — including extreme-altitude construction at University of Ladakh. Pan-India capacity with local execution discipline.</div></div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ─────────────────────────────────────────── -->
+<section class="testimonials" id="testimonials">
+  <div class="sec-eyebrow reveal">Client Feedback</div>
+  <div class="sec-h2 reveal">What Clients Say</div>
+  <div class="sec-rule reveal"></div>
+  <div class="test-grid">
+    <div class="test-card reveal"><div class="test-quote">"</div><div class="test-body">HDG delivered the University of Ladakh campus under NBCC's supervision entirely on schedule, despite extreme altitude and seasonal construction constraints. Their coordination and site discipline were exemplary.</div><div class="test-author"><div class="ta-avatar">NB</div><div><div class="ta-name">NBCC Project Officer</div><div class="ta-role">University of Ladakh Campus</div></div></div></div>
+    <div class="test-card reveal"><div class="test-quote">"</div><div class="test-body">The PNB fit-out was completed with minimal disruption to branch operations. HDG's team understood banking compliance requirements and delivered without a single regulatory issue flagged during handover inspection.</div><div class="test-author"><div class="ta-avatar">PB</div><div><div class="ta-name">Regional Infrastructure Head</div><div class="ta-role">Punjab National Bank</div></div></div></div>
+    <div class="test-card reveal"><div class="test-quote">"</div><div class="test-body">We appreciated the real-time digital tracking HDG provided for the Gurugram University project. Milestone visibility, live site access, and proactive communication made the project execution stress-free for our team.</div><div class="test-author"><div class="ta-avatar">GU</div><div><div class="ta-name">Project Coordinator</div><div class="ta-role">Gurugram University</div></div></div></div>
+  </div>
+</section>
+
+<!-- ── FAQ ─────────────────────────────────────────────────── -->
+<section class="faq" id="faq">
+  <div class="sec-eyebrow reveal">Common Questions</div>
+  <div class="sec-h2 reveal">Frequently Asked Questions</div>
+  <div class="sec-rule reveal"></div>
+  <div class="faq-list reveal">
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the minimum project value HDG accepts? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">HDG is structured for mid-to-large scale government and institutional projects. As a Class 1A CPWD contractor, we primarily engage with projects above ₹1 Crore in value. For strategic clients or multi-phase frameworks, we evaluate smaller packages on a case-by-case basis.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Which states and regions does HDG operate in? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">HDG has active delivery experience across Delhi, Haryana, Uttar Pradesh, Punjab, Jammu & Kashmir, and Ladakh. We have executed projects in remote and extreme-altitude environments including the University of Ladakh. For pan-India requirements, we evaluate logistics and capacity on a per-project basis.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does HDG handle both civil and MEP under the same contract? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. One of HDG's core differentiators is single-contract delivery covering Civil, MEP, Interiors, and Specialized Systems. This eliminates the coordination gap between separate civil and MEP contractors that causes the majority of delays and disputes in institutional construction.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is HDG eligible for tenders under CPWD, NBCC, and other central agencies? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. HDG holds Class 1A registration with CPWD — the highest classification — making the firm eligible to tender for all central government construction contracts without a value ceiling. We have active empanelment with NBCC, DSIIDC, HSIIDC, and several other government bodies.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What documents are available for tender pre-qualification? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">HDG can provide: CPWD Class 1A registration certificate, company profile, project completion certificates, ESI and PF compliance records, GST registration, PAN, audited financials, and technical capability statement. Contact us with your specific pre-qualification checklist and we will compile a complete submission package.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is HDG's current project capacity and availability? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">HDG is currently accepting new tenders for FY 2025–26. We maintain capacity for 3–5 concurrent large projects through dedicated project manager assignments and parallel workforce deployment. Contact us to discuss timelines — we'll give you an honest assessment of availability for your specific project.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does HDG offer a site visit before tendering? <i class="fas fa-chevron-down"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. For all shortlisted projects, HDG conducts a pre-bid site assessment at no charge. This allows our team to evaluate scope, logistics, and risk factors — enabling us to submit realistic, well-costed bids rather than speculative estimates that lead to cost escalation later.</div></div></div>
+  </div>
+</section>
+
+<!-- ── CONTACT ──────────────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <div class="sec-eyebrow reveal">Let's Build Together</div>
+  <div class="sec-h2 reveal">Get In Touch</div>
+  <div class="sec-rule reveal"></div>
+  <div class="contact-grid">
+
+    <!-- Left: details -->
+    <div class="reveal">
+      <p style="color:var(--ink3);font-size:.9rem;line-height:1.85;margin-bottom:2rem;font-weight:300;">Our team is available for site visits, feasibility assessments, and competitive tendering across government, institutional, and defense projects. Reach out to start a conversation.</p>
+      <div class="contact-details">
+        <div class="cd-item">
+          <div class="cd-icon"><i class="fas fa-phone-alt"></i></div>
+          <div><div class="cd-label">Phone</div><div class="cd-value"><a href="tel:+919958057878">+91 99580 57878</a> / <a href="tel:+917838358412">+91 78383 58412</a></div></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon"><i class="fas fa-envelope"></i></div>
+          <div><div class="cd-label">Email</div><div class="cd-value"><a href="mailto:info@hdgconstructions.in">info@hdgconstructions.in</a></div></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><div class="cd-label">Registered Office</div><div class="cd-value">103, Sai Bhawan, Ranjit Nagar Commercial Complex,<br>New Delhi – 110008</div></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon"><i class="fas fa-id-card"></i></div>
+          <div><div class="cd-label">Registration</div><div class="cd-value">Class 1A CPWD Contractor · Est. 1986 · New Delhi</div></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon"><i class="fas fa-clock"></i></div>
+          <div><div class="cd-label">Office Hours</div><div class="cd-value">Monday – Saturday, 9:00 AM – 6:00 PM IST</div></div>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6!2d77.175!3d28.645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM4JzQyLjAiTiA3N8KwMTAnMzAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HDG Office Location"></iframe>
+      </div>
+    </div>
+
+    <!-- Right: form -->
+    <div class="contact-form-box reveal">
+      <div class="form-title">Send an Enquiry</div>
+
+      <!-- Feedback toast -->
+      <div class="form-toast" id="formToast"></div>
+
+      <div class="fg-row">
+        <div class="fg">
+          <label>Full Name *</label>
+          <input type="text" id="f-name" placeholder="Your full name" autocomplete="name">
+          <div class="field-error" id="e-name">Please enter your full name.</div>
+        </div>
+        <div class="fg">
+          <label>Designation</label>
+          <input type="text" id="f-designation" placeholder="Your role / title" autocomplete="organization-title">
+        </div>
+      </div>
+      <div class="fg">
+        <label>Organisation / Department *</label>
+        <input type="text" id="f-organisation" placeholder="Company, department, or agency" autocomplete="organization">
+        <div class="field-error" id="e-organisation">Please enter your organisation.</div>
+      </div>
+      <div class="fg-row">
+        <div class="fg">
+          <label>Phone Number *</label>
+          <input type="tel" id="f-phone" placeholder="+91 00000 00000" autocomplete="tel">
+          <div class="field-error" id="e-phone">Please enter a valid phone number.</div>
+        </div>
+        <div class="fg">
+          <label>Email Address</label>
+          <input type="email" id="f-email" placeholder="your@email.com" autocomplete="email">
+          <div class="field-error" id="e-email">Please enter a valid email address.</div>
+        </div>
+      </div>
+      <div class="fg">
+        <label>Project Type *</label>
+        <select id="f-projectType">
+          <option value="">Select a category</option>
+          <option>Civil Construction</option>
+          <option>MEP Works</option>
+          <option>Interior Fit-Out</option>
+          <option>Specialized Systems</option>
+          <option>Full Project — Civil + MEP + Interiors</option>
+          <option>Renovation & Upgrades</option>
+          <option>Tender Pre-Qualification Documents</option>
+        </select>
+        <div class="field-error" id="e-projectType">Please select a project type.</div>
+      </div>
+      <div class="fg">
+        <label>Approximate Project Value</label>
+        <select id="f-value">
+          <option value="">Select range</option>
+          <option>₹1 – 5 Crore</option>
+          <option>₹5 – 25 Crore</option>
+          <option>₹25 – 100 Crore</option>
+          <option>Above ₹100 Crore</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Project Brief *</label>
+        <textarea id="f-brief" placeholder="Project location, scope, and expected timeline…"></textarea>
+        <div class="field-error" id="e-brief">Please describe your project (at least 10 characters).</div>
+      </div>
+
+      <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
+        <i class="fas fa-paper-plane"></i>Submit Enquiry
+      </button>
+      <p class="form-note">By submitting you agree to our <a href="#">Privacy Policy</a>. We do not share your details with third parties.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <div class="logo-emblem">HDG</div>
+        <div class="footer-name">M/S Harcharan Dass Gupta<small>Class 1A CPWD Contractor</small></div>
+      </div>
+      <p class="footer-about">Delivering civil construction, MEP, interiors, and specialized systems for government, defense, and institutional clients across India since 1986.</p>
+      <div class="footer-reg">Reg. Office: 103, Sai Bhawan, Ranjit Nagar<br>Commercial Complex, New Delhi – 110008<br>CPWD Class 1A · Est. 1986</div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services" onclick="showService('civil')">Civil Construction</a></li>
+        <li><a href="#services" onclick="showService('mep')">MEP Works</a></li>
+        <li><a href="#services" onclick="showService('interiors')">Interiors & Fit-Out</a></li>
+        <li><a href="#services" onclick="showService('specialized')">Specialized Systems</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#track">Track Record</a></li>
+        <li><a href="#projects">Our Projects</a></li>
+        <li><a href="#why">Why HDG</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:+919958057878">+91 99580 57878</a></li>
+        <li><a href="tel:+917838358412">+91 78383 58412</a></li>
+        <li><a href="mailto:info@hdgconstructions.in">info@hdgconstructions.in</a></li>
+        <li><a href="#contact">Send Enquiry</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 M/S Harcharan Dass Gupta. All rights reserved.</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#home" class="back-top" id="backTop" title="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- ═══════════════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════════════════ -->
+<script>
+// ── IMPORTANT: Paste your Apps Script Web App URL here ───────
+// Deploy HDG_Backend.gs as a Web App, then replace the string below.
+// Deploy → New Deployment → Web App → Execute as: Me → Anyone → Copy URL
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxX31AnrxYxraZbmqYTzIn7WzD5O2T0At3N64vnkAbqmhOL5M8XEz1C3jKexBWZpoCS/exec";
+
+// ── SCROLL REVEAL ─────────────────────────────────────────────
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 55);
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// ── BACK TO TOP ───────────────────────────────────────────────
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 500);
+});
+
+// ── NAV ACTIVE STATE ──────────────────────────────────────────
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section[id]');
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const a = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => navObs.observe(s));
+
+// ── MOBILE MENU ───────────────────────────────────────────────
+function openMobileMenu() {
+  document.getElementById('mobileMenu').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ── SERVICES TABS ─────────────────────────────────────────────
+function showService(id, btn) {
+  document.querySelectorAll('.service-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.stab').forEach(b => b.classList.remove('active'));
+  const panel = document.getElementById('svc-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  else {
+    const allBtns = document.querySelectorAll('.stab');
+    const map = {civil:0,mep:1,interiors:2,specialized:3};
+    if (map[id] !== undefined) allBtns[map[id]]?.classList.add('active');
+  }
+}
+
+// ── FAQ ACCORDION ─────────────────────────────────────────────
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ── HERO COUNTER ANIMATION ────────────────────────────────────
+const heroTrust = document.querySelector('.hero-trust');
+if (heroTrust) {
+  const cObs = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      animateCount(document.getElementById('c1'), 38);
+      animateCount(document.getElementById('c2'), 50);
+      cObs.disconnect();
+    }
+  }, { threshold: 0.5 });
+  cObs.observe(heroTrust);
+}
+function animateCount(el, target) {
+  if (!el) return;
+  let n = 0;
+  const step = target / 50;
+  const iv = setInterval(() => {
+    n = Math.min(n + step, target);
+    el.firstChild.nodeValue = Math.floor(n);
+    if (n >= target) clearInterval(iv);
+  }, 30);
+}
+
+// ── FORM VALIDATION & SUBMISSION ──────────────────────────────
+function getVal(id) { return (document.getElementById(id)?.value || '').trim(); }
+function setError(id, show) {
+  const el = document.getElementById(id);
+  const err = document.getElementById('e-' + id.replace('f-', ''));
+  if (el) el.classList.toggle('error', show);
+  if (err) err.classList.toggle('show', show);
+  return show;
+}
+function clearErrors() {
+  document.querySelectorAll('.fg input, .fg textarea, .fg select').forEach(el => el.classList.remove('error'));
+  document.querySelectorAll('.field-error').forEach(el => el.classList.remove('show'));
+}
+
+function validateForm() {
+  let valid = true;
+  const name  = getVal('f-name');
+  const org   = getVal('f-organisation');
+  const phone = getVal('f-phone');
+  const email = getVal('f-email');
+  const ptype = getVal('f-projectType');
+  const brief = getVal('f-brief');
+
+  if (setError('f-name', name.length < 2)) valid = false;
+  if (setError('f-organisation', org.length < 2)) valid = false;
+  if (setError('f-phone', !/^[0-9+\-\s()]{7,15}$/.test(phone))) valid = false;
+  if (email && setError('f-email', !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))) valid = false;
+  if (setError('f-projectType', !ptype)) valid = false;
+  if (setError('f-brief', brief.length < 10)) valid = false;
+
+  return valid;
+}
+
+function showToast(type, message) {
+  const toast = document.getElementById('formToast');
+  toast.className = `form-toast ${type} show`;
+  toast.innerHTML = `<i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i> ${message}`;
+  if (type === 'success') return; // keep success visible
+  setTimeout(() => toast.classList.remove('show'), 6000);
+}
+
+async function handleSubmit() {
+  const btn = document.getElementById('submitBtn');
+  clearErrors();
+
+  if (!validateForm()) {
+    showToast('error', 'Please fix the highlighted fields before submitting.');
+    return;
+  }
+
+  // Loading state
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting…';
+  document.getElementById('formToast').classList.remove('show');
+
+  const payload = {
+    name:         getVal('f-name'),
+    designation:  getVal('f-designation'),
+    organisation: getVal('f-organisation'),
+    phone:        getVal('f-phone'),
+    email:        getVal('f-email'),
+    projectType:  getVal('f-projectType'),
+    value:        getVal('f-value'),
+    brief:        getVal('f-brief'),
+  };
+
+  // ── Check if URL has been configured ─────────────────────────
+  if (APPS_SCRIPT_URL.includes('REPLACE_WITH_YOUR_DEPLOYMENT_ID')) {
+    // Demo mode: simulate success without hitting the API
+    await new Promise(r => setTimeout(r, 1200));
+    onSuccess(btn);
+    return;
+  }
+
+  try {
+    // Apps Script requires no-cors for cross-origin POST from a plain HTML file.
+    // With no-cors we can't read the response body, but the POST still reaches
+    // the script and triggers the Sheet write + email send.
+    // If you host behind a proxy that adds CORS headers, remove mode:'no-cors'
+    // and re-enable the json parsing below for server-side validation feedback.
+    await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode:   'no-cors',                      // required for Apps Script
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+
+    // With no-cors we always treat a completed fetch() as success.
+    onSuccess(btn);
+
+    /* ── If you remove mode:'no-cors' (proxy / server setup): ──
+    const data = await res.json();
+    if (data.success === false) {
+      showToast('error', (data.errors || []).join(' ') || 'Submission failed.');
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i>Submit Enquiry';
+    } else {
+      onSuccess(btn);
+    }
+    ─────────────────────────────────────────────────────────── */
+
+  } catch (err) {
+    console.error('Submission error:', err);
+    // Network failure — inform user
+    btn.classList.add('error-state');
+    btn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Network error — please try again';
+    btn.disabled = false;
+    showToast('error', 'Could not reach the server. Please try again or call +91 99580 57878.');
+    setTimeout(() => {
+      btn.classList.remove('error-state');
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i>Submit Enquiry';
+    }, 4000);
+  }
+}
+
+function onSuccess(btn) {
+  btn.classList.add('success');
+  btn.innerHTML = '<i class="fas fa-check"></i> Submitted — We\'ll be in touch within 24 hours';
+  showToast('success', 'Enquiry received! Our team will contact you within 24 business hours.');
+  // Clear form fields
+  ['f-name','f-designation','f-organisation','f-phone','f-email','f-brief'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  ['f-projectType','f-value'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.selectedIndex = 0;
+  });
+}
+</script>
+</body>
+</html>
